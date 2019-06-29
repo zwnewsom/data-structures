@@ -6,9 +6,9 @@
 #include <stdlib.h>
 #include <time.h>
 
-/* Here we're declaring our data object that we'll call "node." Each node will contain some data (in this case an integer
- however we could use any data type or perhaps several data types if we so choose) and a pointer which will point to the 
- next node in the list */
+// Here we're declaring a blueprint for our data object that we'll call "node." Each node will contain some 
+// data (in this case an integer however we could use any data type or perhaps several data types if we so choose) 
+// and a pointer which will point to the next node in the list
 typedef struct node
 {
     struct node *next;
@@ -27,6 +27,8 @@ node *tail_insert(node *head, int data)
 {
     node *temp;
     
+    // You'll see this quite often in C: checking inputs to functions to avoid errors. Here, if head is NULL 
+    // I simply exit the function by calling another to create a new node 
     if (head == NULL)
         return create_node(data);
     
