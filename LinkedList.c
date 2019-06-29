@@ -1,7 +1,7 @@
-/* These 1st few lines are what's known as "pre-processor directives."
- Suffice it to say that these 3 lines of code give you access to already written blocks of code
- that we use throughout our program here. For example, the function printf() is contained in the stdio.h 
- header file */
+// These 1st few lines are what's known as "pre-processor directives."
+// Suffice it to say that these 3 lines of code give you access to already written blocks of code
+// that we use throughout our program here. For example, the function printf() is contained in the stdio.h 
+// header file
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
