@@ -41,6 +41,8 @@ node *tail_insert(node *head, int data)
     return head;//always return the head
 }
 
+// This is an iterative print function. It takes the head of a linked list, prints the current node's data,
+// advances the pointer, prints that node's data and so on until the end of list is reached
 void print_list(node *head)
 {
     node *temp;
