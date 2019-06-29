@@ -43,6 +43,20 @@ node *tail_insert(node *head, int data)
 
 void print_list(node *head)
 {
+    node *temp;
+
+    if (head == NULL)
+        return;
+
+    temp = head;
+    while (temp->next != NULL)
+    {
+        printf("%d\n", temp->data);
+        temp = temp->next;
+
+        if (temp->next == NULL)
+            printf("%d\n", temp->data);
+    }
 }
 
 void print_list_recursive(node *head)
@@ -68,7 +82,7 @@ int main(void)
     }
 
     // Print the linked list.
-    //print_list(head);
+    print_list(head);
 
     // Print the linked list using our recursive function.
     //print_list_recursive(head);
